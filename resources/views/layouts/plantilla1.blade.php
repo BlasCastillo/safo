@@ -15,9 +15,23 @@
     <header class="header" id="header"  > 
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>  </div>
         <body class="antialiased">
+        <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-        <a href="iniciar" class="btn btn-primary">Iniciar</a>   
-        <a href="registrar" class="btn btn-primary">Registrar</a> 
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" ><i style="font-size: 30px;" class='bx bx-home' ></i></a>
+                    @else 
+                   
+                        <a href="{{ route('login') }}" ><i style="font-size: 30px;" alt="iniciar" class='bx bx-user-check' ></i></a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" ><i style="font-size: 30px;" alt="registrar" class='bx bx-user-plus'></i></a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+        
         
     </header>
     
