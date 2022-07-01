@@ -44,10 +44,10 @@
                 <div class="nav_list"> <a href="inicio" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Inicio</span> </a> 
                 <a href="persona" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Personas</span> </a> 
                 <a href="noticias" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Noticias</span> 
-              </a> <a href="cursos" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Cursos</span> </a>
+              </a> <a href="" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Cursos</span> </a>
                <a href="examenes" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Examenes</span> </a> 
                <a href="estadisticas" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Estadisticas</span> </a> </div>
-            </div> <a href="salir#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Salir</span> </a>
+            </div> <a href="/logout" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Salir</span> </a>
         </nav>
     </div>
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>

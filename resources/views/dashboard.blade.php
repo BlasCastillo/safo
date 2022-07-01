@@ -1,17 +1,18 @@
-<META HTTP-EQUIV="REFRESH" CONTENT="1;URL=http://127.0.0.1:8000/">
 
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('home') }}
-        </h2>
+@extends('layouts.plantilla1')
+
+@section('plantilla1')
+
+<x-app-layout hidden>
+
+    
+    <x-slot name="header" hidden>
+       
     </x-slot>
+<a href="/personas/create" class="btn btn-primary">Completar perfil</a>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
-        </div>
-    </div>
+   
+
+    
 </x-app-layout>
+@endsection('plantilla1')

@@ -56,6 +56,9 @@ Route::get('/noticias', function () {
     return view('noticias');
 });
 
+Route::resource('personas', 'App\Http\Controllers\PersonaController');
+Route::resource('profesors', 'App\Http\Controllers\ProfesorController');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
