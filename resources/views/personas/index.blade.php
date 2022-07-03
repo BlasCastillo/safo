@@ -1,9 +1,13 @@
-@extends('layouts.plantilla1')
+@extends('layouts.plantilla2')
 
 @section('plantilla1')
 <br>
-<a href="/personas/create" class="btn btn-primary"> Crear Persona</a>
-<table id="customers">
+<center>
+    <h1>Usuarios</h1>
+    <a class="btn btn-info" href="{{asset('report-personas.pdf')}}">Imprimir Listado</a>
+    <a href="/personas/create" class="btn btn-primary"> Crear Persona</a>
+</center>
+    <table id="customers">
     <thead>
         <tr>
         <th>Nombre</th>
@@ -24,7 +28,7 @@
         @foreach ($personas as $persona)
 
         <tr>
-            
+
             <td>{{$persona->nombre}}</td>
             <td>{{$persona->apellido}}</td>
             <td>{{$persona->cedula}}</td>
@@ -42,10 +46,10 @@
             @csrf
             @method('DELETE')
             <td> <button type="submit" class="btn btn-danger" >Eliminar</button> </td>
-        
+
         </form>
         </tr>
-            
+
         @endforeach
 
 

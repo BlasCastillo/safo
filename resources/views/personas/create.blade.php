@@ -35,18 +35,36 @@
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text"  autocomplete="off" name="nombre" id="nombre">
                                         <label for="nombre" class="label--desc" >Nombre</label>
+                                        @error('nombre')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text" name="apellido" id="apellido">
                                         <label class="label--desc">Apellido</label>
+                                        @error('apellido')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text"  autocomplete="off" name="cedula" id="cedula">
                                         <label for="nombre" class="label--desc" >Cédula</label>
+                                        @error('cedula')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -60,12 +78,24 @@
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text"  autocomplete="off" name="estado" id="estado">
                                         <label for="nombre" class="label--desc" >estado</label>
+                                        @error('estado')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text" name="municipio" id="municipio">
                                         <label class="label--desc">municipio</label>
+                                        @error('municipio')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -76,6 +106,12 @@
                         <div class="value">
                             <div class="input-group">
                                 <input class="input--style-5" type="text" name="direccion" id="direccion">
+                                @error('direccion')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                             </div>
                         </div>
                     </div>
@@ -84,6 +120,12 @@
                         <div class="value">
                             <div class="input-group">
                                 <input class="input--style-5" type="email" name="correo" id="correo">
+                                @error('correo')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                             </div>
                         </div>
                     </div>
@@ -107,12 +149,23 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @error('operador')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
 
+                                        @enderror
                                 </div>
                                 <div class="col-9">
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text" name="telefono" id="telefono">
                                         <label class="label--desc">Número de teléfono</label>
+                                        @error('telefono')
+                                        <br><br>
+                                            <small>*{{$message}}</small>
+                                        <br>
+
+                                        @enderror
                                     </div>
                                 </div>
                             </div>

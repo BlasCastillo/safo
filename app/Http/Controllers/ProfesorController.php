@@ -53,7 +53,7 @@ class ProfesorController extends Controller
 
         $personas->save();
 
-        return redirect('/profesor');
+        return redirect('/cursos');
 
     }
 
@@ -104,7 +104,7 @@ class ProfesorController extends Controller
 
         $persona->save();
 
-        return redirect('/profesor');
+        return redirect('/cursos');
 
     }
 
@@ -118,6 +118,6 @@ class ProfesorController extends Controller
     {
         $persona = Persona::find($id);
         $persona->delete();
-        return redirect('/profesors');
+        return redirect('/cursos');
     }
 }

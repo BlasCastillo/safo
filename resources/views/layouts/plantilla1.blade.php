@@ -42,7 +42,7 @@
         <nav class="nav">
             <div> <a href="administrador" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Menu Admin</span> </a>
                 <div class="nav_list"> <a href="inicio" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Inicio</span> </a> 
-                <a href="persona" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Personas</span> </a> 
+                <a href="personas" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Personas</span> </a> 
                 <a href="noticias" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Noticias</span> 
               </a> <a href="" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Cursos</span> </a>
                <a href="examenes" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Examenes</span> </a> 

@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('inicio');
 });
+Route::get('/cursos/inscribir', function () {
+    return view('cursos.inscribir');
+});
 Route::get('/inicio', function () {
     return view('inicio');
 });
@@ -37,9 +40,7 @@ Route::get('/iniciar', function () {
 Route::get('/registrar', function () {
     return view('registrar');
 });
-Route::get('/cursos', function () {
-    return view('cursos');
-});
+
 Route::get('/registrarcursos', function () {
     return view('registrarcursos');
 });
@@ -58,7 +59,8 @@ Route::get('/noticias', function () {
 
 Route::resource('personas', 'App\Http\Controllers\PersonaController');
 Route::resource('profesors', 'App\Http\Controllers\ProfesorController');
-
+Route::resource('cursos', 'App\Http\Controllers\CursoController');
+Route::resource('evaluacion', 'App\Http\Controllers\EvaluacionController');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

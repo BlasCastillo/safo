@@ -37,6 +37,20 @@ class PersonaController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+            'nombre'=>'required',
+            'apellido'=>'required',
+            'cedula'=>'required',
+            'operador'=>'required',
+            'telefono'=>'required',
+            'correo'=>'required',
+            'estado'=>'required',
+            'municipio'=>'required',
+            'direccion'=>'required',
+            'rol'=>'required',
+
+        ]);
         $personas = new Persona();
 
         $personas->nombre = $request->GET('nombre');
@@ -52,7 +66,7 @@ class PersonaController extends Controller
 
         $personas->save();
 
-        return redirect('/personas');
+        return redirect('/cursos');
 
     }
 
@@ -103,7 +117,7 @@ class PersonaController extends Controller
 
         $persona->save();
 
-        return redirect('/personas');
+        return redirect('/cursos');
 
     }
 

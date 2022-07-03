@@ -19,7 +19,7 @@
 
 
 
-    
+
         <div class="card card-5">
             <div class="card-heading">
                 <h2 class="title">Actualizar Perfil</h2>
@@ -110,19 +110,19 @@
                                     </div>
 
                                 </div>
-                                <div class="col-9">
+                                <div class="col-4">
                                     <div class="input-group-desc">
                                         <input class="input--style-5" type="text" name="telefono" id="telefono"value="{{$persona->telefono}}">
                                         <label class="label--desc">Número de teléfono</label>
                                     </div>
                                 </div>
+                                <div class="col-4">
+                                    <div class="input-group-desc">
+                                        <input class="input--style-5" type="text" hidden  autocomplete="off" value="1" name="rol" id="rol" value="{{$persona->rol}}">
+                                        <label class="label--desc"></label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="input-group-desc">
-                            <input class="input--style-5" type="text" hidden autocomplete="off" value="1" name="rol" id="rol" value="{{$persona->rol}}">
-                            
                         </div>
                     </div>
                     <div>
@@ -132,7 +132,7 @@
                 </form>
             </div>
         </div>
-    
+
 
 
 <!-- Jquery JS-->
